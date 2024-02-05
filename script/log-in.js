@@ -20,7 +20,7 @@ createApp ({
           document.cookie = `hexToken=${token}; expires=${new Date(expired)}; path=/`;
 
           // 登入成功後導向 products.html
-          window.location = 'products.html';
+          window.location = 'products-wk3.html';
         })
         .catch((error) => {
           alert(error.data.message); 
