@@ -19,7 +19,7 @@ createApp ({
           const { token, expired } = response.data;
           document.cookie = `hexToken=${token}; expires=${new Date(expired)}; path=/`;
 
-          // 登入成功後導向 products.html
+          // 登入成功後導向 products-wk3.html
           window.location = 'products-wk3.html';
         })
         .catch((error) => {
