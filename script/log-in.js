@@ -23,7 +23,6 @@ createApp ({
           window.location = 'products.html';
         })
         .catch((error) => {
-          console.log(error);
           alert(error.data.message); 
         })
     }
