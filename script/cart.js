@@ -94,6 +94,12 @@ const app = createApp({
           this.getCart();
         })
     },
+    removeCartItemAll() {
+      axios.delete(`${apiUrl}/v2/api/${apiPath}/carts`)
+        .then((response) => {
+          this.getCart();
+        })
+    },
     getCart() {
       axios.get(`${apiUrl}/v2/api/${apiPath}/cart`)
         .then((response) => {
